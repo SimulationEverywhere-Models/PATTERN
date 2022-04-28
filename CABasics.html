@@ -1,0 +1,87 @@
+<html><head>
+<title>Fractal Geometry Summer Workshop</title></head>
+<body bgcolor="WHITE">
+<h1 align="center">4. B. Cellular Automaton Basics</h1>
+
+<p align="justify">A cellular automaton (CA) is defined by four attributes:
+
+</p><p align="justify">1.  The <a href="http://classes.yale.edu/99-00/math190a/StateSpace.html">state space</a>, the model of the world, 
+a collection of cells.
+
+</p><p align="justify">2.  The <a href="http://classes.yale.edu/99-00/math190a/Nbhd.html">neighborhood</a> (nbhd) of a cell.  Those 
+cells whose current states affect the next state of a cell.  
+
+</p><p align="justify">3.  The <a href="http://classes.yale.edu/99-00/math190a/StateNumber.html">number of states</a> a cell can assume.  
+This measures the level of detail at which we view the cells.  
+
+</p><p align="justify">4.  The <a href="http://classes.yale.edu/99-00/math190a/Rule.html">rule</a> of the CA: how the current states of 
+the cells in the nbhd determine the next state of a cell.  
+
+</p><p align="justify">
+
+
+</p><p align="justify">This seems awfully simple, especially if the number of states 
+is few and the neighborhood size small.  As a hint of the possible richness involved, we 
+calculate the number of CA rules.
+
+</p><p align="justify">We have already seen with S states per cell and N cells per nbhd, there are 
+<a href="http://classes.yale.edu/99-00/math190a/StateNumber.html">S<sup>N</sup> neighborhood configurations</a>.  A rule 
+specifies eaxctly which of the S possible states results from each of the S<sup>N</sup> 
+neighborhood configurations.  Suppose we number the neighborhood configurations 1 through 
+S<sup>N</sup>.  Then there are S outcomes for configuration 1 and S outcomes for 
+configuration 2, so S<sup>2</sup> combinations of outcomes for configurations 1 and 2.  
+
+</p><p align="justify">Suppose S = 2, and write the states as 0 and 1.  Then the combinations 
+for the first two neighborhood configurations are 
+
+</p><p align="justify">00, 10, 01, 11
+
+</p><p align="justify">Continuing, there are S<sup>3</sup> combinations of outcomes 
+for configurations 1, 2, and 3.  For S = 2, here are the combinations for the first 
+three neighborhood configurations
+
+</p><p align="justify">000, 100, 010, 110, 001, 101, 011, 111
+
+</p><p align="justify">In general, there are S<sup>(S<sup>N</sup>)</sup> rules.  How large 
+is this number?
+
+</p><p align="justify">S = 2, N = 3 gives 2<sup>(2<sup>3</sup>)</sup> = 2<sup>8</sup> = 256 
+rules.  Spending one minute investigating each rule, one person could see all the possibilities 
+in 4 and 1/4 hours, a single afternoon.  
+
+</p><p align="justify">S = 2, N = 5 gives 2<sup>(2<sup>5</sup>)</sup> = 2<sup>32</sup> = 
+4,294,967,296 rules.  At one second per rule, a person would have to work 24 hours a 
+day, every day without interruption for 136 years.  
+
+</p><p align="justify">S = 2, N = 9 (two-dimensional Moore neighborhood automata) 
+gives 2<sup>(2<sup>9</sup>)</sup> = 2<sup>512</sup> rules.  How 
+<a href="http://classes.yale.edu/99-00/math190a/BigNumber.gif">big</a> is this number?  If every elementary particle in the 
+universe were a supercomputer examining a trillion CA per second, starting at the 
+Big Bang, by now only one part in 10<sup>44</sup> would have been examined.  Failing 
+some fundamental advance in the physics of computation (superstring computers working 
+at superstring frequencies?), we will never, Never, NEVER see all the possibilities.       
+
+</p><p align="justify">What happens for S = 3?  As a hint of what this small increase in 
+S will do, note that for N = 3 we have <nobr>3<sup>(3<sup>3</sup>)</sup> = 
+7,625,597,484,987</nobr> rules.  Recall there are 256 rules for S = 2 and N = 3.  
+For S = 3 and N = 9 there are <nobr>3<sup>(3<sup>9</sup>)</sup> = 10<sup>9392</sup></nobr> 
+rules.  
+
+</p><p align="justify">
+
+</p><p align="justify">Cellular automata are used to model physical, chemical, biological, and 
+social interactions.  For many of these the exact positions of live cells in the 
+neighborhood is not as important as the number of live cells.  Such CA are called <b>totalistic</b>.   
+We are interested in an extension of this notion called <a href="http://classes.yale.edu/99-00/math190a/OT.html">outer totalistic</a>.
+
+</p><p align="justify">Continue to <a href="http://classes.yale.edu/99-00/math190a/CAPatterns.html">
+4. C. Examples of Cellular Automata Patterns</a>
+
+</p><p align="justify">Return to <a href="http://classes.yale.edu/99-00/math190a/SelfRepl.html">4. A. The Paradox of Self-Replicating 
+Machines</a>
+
+</p><p align="justify">Return to <a href="http://classes.yale.edu/99-00/math190a/welcomeCA.html">4. Cellular Automata and Fractal Evolution</a>
+
+</p><p align="justify">
+
+</p></body></html>
